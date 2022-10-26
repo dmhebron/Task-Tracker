@@ -1,0 +1,43 @@
+:root{
+    color: #535657;
+    color: #F4FAFF;
+    color: #dee7e7;
+    color: #b7adcf;
+    color: #4f646f;
+}
+body{
+    font-family: 'Lucida Sans', Geneva;
+    color: #535657;
+    background-color:#b7adcf;
+    display: flex;
+    flex-direction: column;
+}
+h1{
+    text-transform: capitalize;
+    display: flex;
+    justify-content: center;
+}
+h2{
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+}
+
+header input[type="text"]  {
+    display: block;
+	width: fit-content;
+	font-size: 20px;
+	padding: 1rem 1.5rem;
+	color: #4f646f;
+	background-color: #F4FAFF;
+	border-radius: 25px;
+	}
+    header input[type="submit"]{
+        display: block;
+        color: #4f646f;
+        text-transform: lowercase;
+        cursor: pointer;
+        border-radius: 25px;
+        padding: 5px;
+        margin-top: 15px;
+    }
