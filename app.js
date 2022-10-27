@@ -1,17 +1,12 @@
-/* when the page loads we are going to grab these elements by their id from the html file*/
-//Returns the first element that is a descendant of node that matches selectors.
 window.addEventListener('load', () => {
 	const form = document.querySelector("#newtask");
     const input = document.querySelector("#entertask");
     const listElement = document.querySelector("#tasks");
 	
 	
-    /* prevents the page from refreshing when the submit button is pressed*/
-    form.addEventListener('submit', (e) =>{
+       form.addEventListener('submit', (e) =>{
         e.preventDefault();
 
-// created an if statement requiring the user to type something in the task tracker
-// if nothing is typed then the form will not do anything
         const task = input.value;
 		       
         const taskElement = document.createElement('div'); // allows us to create div elements on the page
@@ -48,11 +43,7 @@ window.addEventListener('load', () => {
 		listElement.appendChild(taskElement);
 
 		input.value = '';
-//creating a function that when the user clicks the edit button
-//the user can change the text
-//then the edit button will change to save so the button goes 
-//once the save button is clicked it will go back to edit
-//the text will not be able to be changed when the edit button is visible
+
 		taskEdit.addEventListener('click', (e) => {
 
 			if (taskEdit.innerText.toLowerCase() == "edit") {
@@ -64,7 +55,7 @@ window.addEventListener('load', () => {
 				taskInput.setAttribute("readonly", "readonly");
 			}
 		});
-//when the delete button is clicked then the item will be deleted from the list
+
 		taskDelete.addEventListener('click', (_e) => {
 			listElement.removeChild(taskElement);
 		});
