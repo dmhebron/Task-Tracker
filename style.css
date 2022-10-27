@@ -11,7 +11,7 @@ body{
     background-color:#b7adcf;
     display: flex;
     flex-direction: column;
-}
+    }
 h1{
     text-transform: capitalize;
     display: flex;
@@ -23,9 +23,8 @@ h2{
     justify-content: center;
 }
 
-header input[type="text"]  {
-    display: block;
-	width: fit-content;
+input[type="text"]  {
+   	width: fit-content;
 	font-size: 20px;
 	padding: 1rem 1.5rem;
 	color: #4f646f;
@@ -41,3 +40,5 @@ header input[type="text"]  {
         padding: 5px;
         margin-top: 15px;
     }
+
+    
